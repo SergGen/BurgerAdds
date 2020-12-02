@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Burger</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+<h3 class="burger-top">Собери бургер</h3>
+<form action="#" id="burger-form">
+    <fieldset id="burger-fieldset">
+        <fieldset class="burger-fieldset-inside">
+            <h4>Выбери размер бургера</h4>
+            <input type="radio" name="size" id="bigburger" class="burger-input" data-price="100" data-calories="40" checked>
+            <label for="bigburger">Большой 100р 40к</label><br>
+            <input type="radio" name="size" id="smallburger" class="burger-input" data-price="50" data-calories="20">
+            <label for="smallburger">Маленький 50р 20к</label><br>
+        </fieldset>
+
+        <fieldset class="burger-fieldset-inside">
+            <h4>Выбери начинку</h4>
+            <input type="radio" name="filling" id="cheese" class="burger-input" data-price="10" data-calories="20" checked>
+            <label for="cheese">Сыр 10р 20к</label><br>
+            <input type="radio" name="filling" id="salad" class="burger-input" data-price="20" data-calories="5">
+            <label for="salad">Салат 20р 5к</label><br>
+            <input type="radio" name="filling" id="potato" class="burger-input" data-price="15" data-calories="10">
+            <label for="potato">Картофель 15р 10к</label><br>
+        </fieldset>
+
+        <fieldset class="burger-fieldset-inside">
+            <h4>Выбери доп опцию</h4>
+            <input type="checkbox" name="options" id="seasoning" class="burger-input" data-price="15" data-calories="0">
+            <label for="seasoning">Приправа 15р 0к</label><br>
+            <input type="checkbox" name="options" id="mayonnaise" class="burger-input" data-price="20" data-calories="5">
+            <label for="mayonnaise">Майонез 20р 5к</label><br>
+        </fieldset>
+
+    </fieldset>
+    <button id="check" type="button">Подсчитать</button>
+
+    <p id="result">Итого: <span id="price">0</span>р<br>
+        Калорий: <span id="calories">0</span>к</p>
+</form>
+</body>
+</html>
